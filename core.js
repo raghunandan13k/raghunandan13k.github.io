@@ -46,10 +46,10 @@
 			[{v:'20062', f:'VEDANARAYANA KRISHNAMURTHY'}, '2006', 'ALIVE', '', '' ],
           [{v:'2007', f:'SURESH'}, '1001', 'ALIVE', '', '' ],
 		  
-		  /*[{v:'1002', f:'PANDURANGA BHAT'}, '1', 'DEAD', '', '' ],
+		  [{v:'1002', f:'PANDURANGA BHAT'}, '1', 'DEAD', '', '' ],
 			[{v:'10021', f:'RATHNAKARA BHAT'}, '1002', 'ALIVE', '', '' ],
 				[{v:'100211', f:'DILIP BHAT'}, '10021', 'ALIVE', '', '' ],
-					[{v:'1002111', f:'SHREYAS BHAT'}, '100211', 'ALIVE', '', '' ],*/
+					[{v:'1002111', f:'SHREYAS BHAT'}, '100211', 'ALIVE', '', '' ],
         ]);
 		
         var chart = new google.visualization.OrgChart(document.getElementById('chart_div'));
@@ -63,8 +63,10 @@
 			name = name.replace(' ', '<BR>');
 			
 			//console.log(data.getFormattedValue(row,0));
-			var tempValue = "<a href='TARGET'><img src='profiles/PERSON.PNG'></a><BR><div title='TITLE'>" + name + "</div>";
-			tempValue = tempValue.replace('PERSON.PNG', data.getValue(row,0) + '_SMALL.PNG');
+			//var tempValue = "<a href='TARGET'><img src='profiles/PERSON.PNG'></a><BR><div title='TITLE'>" + name + "</div>";
+
+			var tempValue = "<a href='TARGET'><img src='http://elementpro.net/wp-content/uploads/2014/07/In-person-icon.png'></a><BR><div title='TITLE'>" + name + "</div>";
+			//tempValue = tempValue.replace('PERSON.PNG', data.getValue(row,0) + '_SMALL.PNG');
 			tempValue = tempValue.replace('TITLE', data.getValue(row,0));
 			tempValue = tempValue.replace('TARGET', data.getValue(row,0) + '.HTML');
 			
