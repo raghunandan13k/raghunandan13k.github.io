@@ -82,8 +82,8 @@
 			//console.log(data.getFormattedValue(row,0));
 			//var tempValue = "<a href='TARGET'><img src='profiles/PERSON.PNG'></a><BR><div title='TITLE'>" + name + "</div>";
 
-			var tempValue = "<a href='TARGET'><img src='https://cdn2.iconfinder.com/data/icons/perfect-flat-icons-2/512/People_group_users_friends_man_user_vector.png'></a><BR><div title='TITLE'>" + name + "</div>";
-			//tempValue = tempValue.replace('PERSON.PNG', data.getValue(row,0) + '_SMALL.PNG');
+			var tempValue = "<a href='TARGET'><img src='PERSON.PNG'></a><BR><div title='TITLE'>" + name + "</div>";
+			tempValue = tempValue.replace('PERSON.PNG', getProfileImage(data.getValue(row,0)));
 			tempValue = tempValue.replace('TITLE', data.getValue(row,0));
 			tempValue = tempValue.replace('TARGET', data.getValue(row,0) + '.HTML');
 			
