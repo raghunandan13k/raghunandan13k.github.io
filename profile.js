@@ -1,7 +1,7 @@
 function getProfileImage(lookupId) {
   var map = 
   {
-    a:'b'
+    20061:'https://cloud.githubusercontent.com/assets/10024457/5278852/0885c98e-7b04-11e4-92e7-7a724fa20822.PNG'
   };
   
   if(typeof map[lookupId] != "undefined") 
