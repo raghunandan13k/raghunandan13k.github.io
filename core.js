@@ -10,12 +10,19 @@
 		logStart('CHART');
 		var data = new google.visualization.DataTable();
 
+ 		// 0
 		data.addColumn('string', 'CHILD');
+		// 1
         	data.addColumn('string', 'FATHER');
-		data.addColumn('string', 'ALIVE');	
-		data.addColumn('string', 'MOBILE');		
+        	// 2
+		data.addColumn('string', 'ALIVE');
+		// 3
+		data.addColumn('string', 'MOBILE');
+		// 4
 		data.addColumn('string', 'WHATSAPP');
+		// 5
 		data.addColumn('string', 'EMAIL');
+		// 6
 		data.addColumn('string', 'OTHER');
 		
         data.addRows([
