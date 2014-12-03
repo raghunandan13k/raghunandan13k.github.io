@@ -1,7 +1,7 @@
 function getProfileImage(lookupId) {
   var map = 
   {
-    a:b
+    a:'b'
   };
   
   if(typeof map[lookupId] != "undefined") 
