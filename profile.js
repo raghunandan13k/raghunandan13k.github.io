@@ -1,4 +1,4 @@
-function string getProfileImage(lookupId) {
+function getProfileImage(lookupId) {
   var map = 
   {
     a:b
