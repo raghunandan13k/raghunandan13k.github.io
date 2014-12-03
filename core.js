@@ -34,39 +34,69 @@
 		data.addColumn('string', 'OTHER');
 		
         data.addRows([
-			[{v:'1', f:'KOLIWADA'}, '1', 'DEAD', '', '', '', '' ],
-		  [{v:'1001', f:'VEDANARAYANA BHAT'}, '1', 'DEAD', '', '', '', '' ],          			
-          [{v:'2001', f:'MADHAVA BHAT'}, '1001', 'ALIVE', '', '', '', '' ],
-			[{v:'20011', f:'SATHISH BHAT'}, '2001', 'ALIVE', '', '', '', '' ],
-			[{v:'20012', f:'MAHESH BHAT'}, '2001', 'ALIVE', '', '', '', '' ],
-				[{v:'200121', f:'PANNAGA BHAT'}, '20012', 'ALIVE', '', '', '', '' ],
-			[{v:'20013', f:'HARISH BHAT'}, '2001', 'ALIVE', '', '', '', '' ],
-          [{v:'2002', f:'GANGHADHARA BHAT'}, '1001', 'ALIVE', '', '', '', '' ],
-			[{v:'20021', f:'BALACHANDRA K G'}, '2002', 'ALIVE', '', '', '', '' ],
-				[{v:'200211', f:'GOUTHAM BHAT'}, '20021', 'ALIVE', '', '', '', '' ],
-				[{v:'200212', f:'GOVRAW BHAT'}, '20021', 'ALIVE', '', '', '', '' ],
-			[{v:'20022', f:'RAGHAVENDRA K G'}, '2002', 'ALIVE', '', '', '', '' ],
-				[{v:'200221', f:'SUHRUTH SHANKARA BHAT'}, '20022', 'ALIVE', '', '', '', '' ],
-          [{v:'2003', f:'RANGANATHA BHAT'}, '1001', 'ALIVE', '', '', '', '' ],
-			[{v:'20031', f:'KIRAN KUMAR R'}, '2003', 'ALIVE', '', '', '', '' ],
-				[{v:'200311', f:'PRATHAM'}, '20031', 'ALIVE', '', '', '', '' ],
-          [{v:'2004', f:'SUNDARESH BHAT'}, '1001', 'ALIVE', '', '', '', '' ],
-			[{v:'20041', f:'DEEPAK'}, '2004', 'ALIVE', '', '', '', '' ],
-		  [{v:'2005', f:'KESHAVA MURTHY'}, '1001', 'ALIVE', '', '', '', '' ],
-			[{v:'20051', f:'ANIL BHAT'}, '2005', 'ALIVE', '', '', '', '' ],
-				[{v:'200511', f:'ABHINAV BHAT'}, '20051', 'ALIVE', '', '', '', '' ],
-			[{v:'20052', f:'SUNIL MURTHY'}, '2005', 'ALIVE', '', '', '', '' ],
-				[{v:'200521', f:'ROHAN MURTHY'}, '20052', 'ALIVE', '', '', '', '' ],
-          [{v:'2006', f:'KRISHNAMURTHY'}, '1001', 'ALIVE', '', '', '', '' ],
-			[{v:'20061', f:'RAGHUNANDAN KRISHNAMURTHY'}, '2006', 'ALIVE', '9900166130', 'YES', 'raghunandan13k@gmail.com', '' ],
-				[{v:'200611', f:'SAMARTH RAGHUNANDAN'}, '20061', 'ALIVE', '', '', '', '' ],
-			[{v:'20062', f:'VEDANARAYANA KRISHNAMURTHY'}, '2006', 'ALIVE', '', '', '', '' ],
-          [{v:'2007', f:'SURESH'}, '1001', 'ALIVE', '', '', '', '' ],
+		[{v:'1', f:'KOLIWADA'}, '1', 'DEAD', '', '', '', 'M' ],
+		  [{v:'1001', f:'VEDANARAYANA BHAT'}, '1', 'DEAD', '', '', '', 'M' ],          			
+          // 1
+		  [{v:'2001', f:'MADHAVA BHAT'}, '1001', 'ALIVE', '', '', '', 'M' ],
+			[{v:'20011', f:'SATHISH BHAT'}, '2001', 'ALIVE', '', '', '', 'M' ],
+			[{v:'20012', f:'MAHESH BHAT'}, '2001', 'ALIVE', '', '', '', 'M' ],
+				[{v:'200121', f:'PANNAGA BHAT'}, '20012', 'ALIVE', '', '', '', 'M' ],
+			[{v:'20013', f:'HARISH BHAT'}, '2001', 'ALIVE', '', '', '', 'M' ],
+			[{v:'20014', f:'ARUNA RAMPRASANNA'}, '2001', 'ALIVE', '', '', '', 'F' ],
+				[{v:'200141', f:'VANISHREE PRADEEP'}, '20014', 'ALIVE', '', '', '', 'F' ],
+				[{v:'200142', f:'VIDYASHREE RAMPRASANNA'}, '20014', 'ALIVE', '', '', '', 'F' ],
+			[{v:'20015', f:'ANURADHA KESHAVAMURTHY'}, '2001', 'ALIVE', '', '', '', 'F' ],
+				[{v:'200151', f:'BHARATH'}, '20015', 'ALIVE', '', '', '', 'F' ],
+				[{v:'200152', f:'BHAVANA'}, '20015', 'ALIVE', '', '', '', 'F' ],
+		  // 2		
+          [{v:'2002', f:'GANGHADHARA BHAT'}, '1001', 'ALIVE', '', '', '', 'M' ],
+			[{v:'20021', f:'BALACHANDRA K G'}, '2002', 'ALIVE', '', '', '', 'M' ],
+				[{v:'200211', f:'GOUTHAM BHAT'}, '20021', 'ALIVE', '', '', '', 'M' ],
+				[{v:'200212', f:'GOVRAW BHAT'}, '20021', 'ALIVE', '', '', '', 'M' ],
+			[{v:'20022', f:'RAGHAVENDRA K G'}, '2002', 'ALIVE', '', '', '', 'M' ],
+				[{v:'200221', f:'SUHRUTH SHANKARA BHAT'}, '20022', 'ALIVE', '', '', '', 'M' ],
+			[{v:'20023', f:'INDIRA MURALI'}, '2002', 'ALIVE', '', '', '', 'F' ],
+				[{v:'200231', f:'ABHISHEK MURALI'}, '20023', 'ALIVE', '', '', '', 'F' ],
+			[{v:'20024', f:'SUVARNA SUBODH'}, '2002', 'ALIVE', '', '', '', 'F' ],
+				[{v:'200241', f:'ULLAS SUBODH'}, '20024', 'ALIVE', '', '', '', 'F' ],
+				[{v:'200242', f:'SHREYA SUBODH'}, '20024', 'ALIVE', '', '', '', 'F' ],
+		  // 3
+		  [{v:'2003', f:'RANGANATHA BHAT'}, '1001', 'ALIVE', '', '', '', 'M' ],
+			[{v:'20031', f:'KIRAN KUMAR R'}, '2003', 'ALIVE', '', '', '', 'M' ],
+				[{v:'200311', f:'PRATHAM'}, '20031', 'ALIVE', '', '', '', 'M' ],
+            [{v:'20032', f:'POORNIMA VENKATESH'}, '2003', 'ALIVE', '', '', '', 'F' ],
+				[{v:'200321', f:'VIDHATRI VENKATESH'}, '20032', 'ALIVE', '', '', '', 'F' ],
 		  
-		  [{v:'1002', f:'PANDURANGA BHAT'}, '1', 'DEAD', '', '', '', '' ],
-			[{v:'10021', f:'RATHNAKARA BHAT'}, '1002', 'ALIVE', '', '', '', '' ],
-				[{v:'100211', f:'DILIP BHAT'}, '10021', 'ALIVE', '', '', '', '' ],
-					[{v:'1002111', f:'SHREYAS BHAT'}, '100211', 'ALIVE', '', '', '', '' ],
+		  // 4
+		  [{v:'2004', f:'SUNDARESH BHAT'}, '1001', 'ALIVE', '', '', '', 'M' ],
+			[{v:'20041', f:'DEEPAK'}, '2004', 'ALIVE', '', '', '', 'M' ],
+		    [{v:'20042', f:'DIVYA SRIKANTH'}, '2004', 'ALIVE', '', '', '', 'F' ],
+		  
+		  // 5
+		  [{v:'2005', f:'KESHAVA MURTHY'}, '1001', 'ALIVE', '', '', '', 'M' ],
+			[{v:'20051', f:'ANIL BHAT'}, '2005', 'ALIVE', '', '', '', 'M' ],
+				[{v:'200511', f:'ABHINAV BHAT'}, '20051', 'ALIVE', '', '', '', 'M' ],
+			[{v:'20052', f:'SUNIL MURTHY'}, '2005', 'ALIVE', '', '', '', 'M' ],
+				[{v:'200521', f:'ROHAN MURTHY'}, '20052', 'ALIVE', '', '', '', 'M' ],
+            [{v:'20053', f:'ANITHA SURESH'}, '2005', 'ALIVE', '', '', '', 'F' ],
+				[{v:'200531', f:'ANISH SURESH'}, '20053', 'ALIVE', '', '', '', 'F' ],
+		  
+		  // 6
+		  [{v:'2006', f:'KRISHNAMURTHY'}, '1001', 'ALIVE', '', '', '', 'M' ],
+			[{v:'20061', f:'RAGHUNANDAN KRISHNAMURTHY'}, '2006', 'ALIVE', '9900166130', 'YES', 'raghunandan13k@gmail.com', 'M' ],
+				[{v:'200611', f:'SAMARTH RAGHUNANDAN'}, '20061', 'ALIVE', '', '', '', 'M' ],
+			[{v:'20062', f:'VEDANARAYANA KRISHNAMURTHY'}, '2006', 'ALIVE', '', '', '', 'M' ],
+          
+		  // 7
+		  [{v:'2007', f:'SURESH'}, '1001', 'ALIVE', '', '', '', 'M' ],
+			[{v:'20071', f:'SUPRIYA KRISHNA'}, '2007', 'ALIVE', '', '', '', 'F' ],
+				[{v:'200711', f:'PRAGNEYA KRISHNA'}, '20071', 'ALIVE', '', '', '', 'F' ],
+		
+		
+		  [{v:'1002', f:'PANDURANGA BHAT'}, '1', 'DEAD', '', '', '', 'M' ],
+			[{v:'10021', f:'RATHNAKARA BHAT'}, '1002', 'ALIVE', '', '', '', 'M' ],
+				[{v:'100211', f:'DILIP BHAT'}, '10021', 'ALIVE', '', '', '', 'M' ],
+					[{v:'1002111', f:'SHREYAS BHAT'}, '100211', 'ALIVE', '', '', '', 'M' ],
         ]);
 		
         var chart = new google.visualization.OrgChart(document.getElementById('chart_div'));
