@@ -78,6 +78,7 @@
 				[{v:'200511', f:'ABHINAV BHAT'}, '20051', 'ALIVE', '', '', '', 'M' ],
 			[{v:'20052', f:'SUNIL MURTHY'}, '2005', 'ALIVE', '', '', '', 'M' ],
 				[{v:'200521', f:'ROHAN MURTHY'}, '20052', 'ALIVE', '', '', '', 'M' ],
+				[{v:'200522', f:'RIYA MURTHY'}, '20052', 'ALIVE', '', '', '', 'F' ],
             [{v:'20053', f:'ANITHA SURESH'}, '2005', 'ALIVE', '', '', '', 'F' ],
 				[{v:'200531', f:'ANISH SURESH'}, '20053', 'ALIVE', '', '', '', 'F' ],
 		  
@@ -107,7 +108,7 @@
 		    var name = data.getFormattedValue(row,0).toProperCase();
 			
 			if(name.length > 15)
-			name = name.replace(' ', '<BR>');
+			name = name.replace(' ', '<BR>') + '(' + data.getValue(row,6) + ')';
 			
 			//console.log(data.getFormattedValue(row,0));
 			//var tempValue = "<a href='TARGET'><img src='profiles/PERSON.PNG'></a><BR><div title='TITLE'>" + name + "</div>";
