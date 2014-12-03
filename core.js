@@ -58,7 +58,7 @@
 			[{v:'20052', f:'SUNIL MURTHY'}, '2005', 'ALIVE', '', '', '', '' ],
 				[{v:'200521', f:'ROHAN MURTHY'}, '20052', 'ALIVE', '', '', '', '' ],
           [{v:'2006', f:'KRISHNAMURTHY'}, '1001', 'ALIVE', '', '', '', '' ],
-			[{v:'20061', f:'RAGHUNANDAN KRISHNAMURTHY'}, '2006', 'ALIVE', '9900166130', 'YES', 'raghunandan13k+gmail.com', '' ],
+			[{v:'20061', f:'RAGHUNANDAN KRISHNAMURTHY'}, '2006', 'ALIVE', '9900166130', 'YES', 'raghunandan13k@gmail.com', '' ],
 				[{v:'200611', f:'SAMARTH RAGHUNANDAN'}, '20061', 'ALIVE', '', '', '', '' ],
 			[{v:'20062', f:'VEDANARAYANA KRISHNAMURTHY'}, '2006', 'ALIVE', '', '', '', '' ],
           [{v:'2007', f:'SURESH'}, '1001', 'ALIVE', '', '', '', '' ],
@@ -113,7 +113,7 @@
 			// 3. Email
 			if( (data.getValue(row,5) + '') != '')
 			{
-			  tempValue = tempValue + "<a href='#' onClick='mail2(\"" + name.replace('<BR>', ' ') + "\"," + (data.getValue(row,5) + '') + ")'><img id='img' src='https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcSOVRVubJ3YyM9RFoCnc2V2E_OhvBEuH8IKTXUtMPKOP5O8t2c3'></a>";
+			  tempValue = tempValue + "<a href='#' onClick='mail2(\"" + name.replace('<BR>', ' ') + "\",'" + (data.getValue(row,5) + '') + "')'><img id='img' src='https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcSOVRVubJ3YyM9RFoCnc2V2E_OhvBEuH8IKTXUtMPKOP5O8t2c3'></a>";
 			}
 			
 			data.setFormattedValue(row,0,  tempValue);
