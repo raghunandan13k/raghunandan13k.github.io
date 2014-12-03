@@ -113,7 +113,7 @@
 			// 3. Email
 			if( (data.getValue(row,5) + '') != '')
 			{
-			  tempValue = tempValue + "<a href='#' onClick='mail2(\"" + name.replace('<BR>', ' ') + "\",'" + (data.getValue(row,5) + '') + "')'><img id='img' src='https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcSOVRVubJ3YyM9RFoCnc2V2E_OhvBEuH8IKTXUtMPKOP5O8t2c3'></a>";
+			  tempValue = tempValue + "<a href='#' onClick='mail2(\"" + name.replace('<BR>', ' ') + "\", \"" + (data.getValue(row,5) + '') + "\")'><img id='img' src='https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcSOVRVubJ3YyM9RFoCnc2V2E_OhvBEuH8IKTXUtMPKOP5O8t2c3'></a>";
 			}
 			
 			data.setFormattedValue(row,0,  tempValue);
