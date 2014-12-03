@@ -1,5 +1,13 @@
 	  function whatsapp(name, mobile) {
-	    alert("You can reach " + name + " on " + mobile);
+	    alert("You can reach " + name + " on WhatsApp!..\n\n" + mobile);
+	  }
+	  
+	  function email(name, mobile) {
+	    alert("You can mail " + name + " ..\n\n" + mobile);
+	  }
+	  
+	  function call(name, mobile) {
+	    alert("You can reach " + name + " on this phone/mobile number..\n\n" + mobile);
 	  }
 	  
 	  String.prototype.toProperCase = function () {
@@ -93,7 +101,7 @@
 			// 2. MOBILE
 			if( (data.getValue(row,3) + '') != '')
 			{
-			  tempValue = tempValue + "<a href='#' onClick='whatsapp(\"" + name.replace('<BR>', ' ') + "\"," + (data.getValue(row,3) + '') + ")'><img id='img' src='https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcRCXENg78JDaCYveQ4ClH01LZOnew_YmU4I_2B7EqXjLgG_3QAS0w'></a>";
+			  tempValue = tempValue + "<a href='#' onClick='call(\"" + name.replace('<BR>', ' ') + "\"," + (data.getValue(row,3) + '') + ")'><img id='img' src='https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcRCXENg78JDaCYveQ4ClH01LZOnew_YmU4I_2B7EqXjLgG_3QAS0w'></a>";
 			}
 			
 			// 2. WhatsApp!
@@ -105,7 +113,7 @@
 			// 3. Email
 			if( (data.getValue(row,5) + '') != '')
 			{
-			  tempValue = tempValue + "<a href='#' onClick='whatsapp(\"" + name.replace('<BR>', ' ') + "\"," + (data.getValue(row,3) + '') + ")'><img id='img' src='https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcSOVRVubJ3YyM9RFoCnc2V2E_OhvBEuH8IKTXUtMPKOP5O8t2c3'></a>";
+			  tempValue = tempValue + "<a href='#' onClick='email(\"" + name.replace('<BR>', ' ') + "\"," + (data.getValue(row,5) + '') + ")'><img id='img' src='https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcSOVRVubJ3YyM9RFoCnc2V2E_OhvBEuH8IKTXUtMPKOP5O8t2c3'></a>";
 			}
 			
 			data.setFormattedValue(row,0,  tempValue);
