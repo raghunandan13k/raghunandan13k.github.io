@@ -109,6 +109,7 @@
 			[{v:'10021', f:'RATHNAKARA BHAT'}, '1002', 'ALIVE', '', '', '', 'M' ],
 				[{v:'100211', f:'DILIP BHAT'}, '10021', 'ALIVE', '', '', '', 'M' ],
 					[{v:'1002111', f:'SHREYAS BHAT'}, '100211', 'ALIVE', '', '', '', 'M' ],
+				[{v:'100212', f:'DEEPASHREE BHAT'}, '10021', 'ALIVE', '', '', '', 'F' ],
         ]);
 		
         var chart = new google.visualization.OrgChart(document.getElementById('chart_div'));
