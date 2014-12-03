@@ -1,13 +1,13 @@
 	  function whatsapp(name, mobile) {
-	    alert("You can reach " + name + " on WhatsApp!..\n\n" + mobile);
+	    alert("You can WhatsApp! " + name + " on ..\n\n" + mobile);
 	  }
 	  
-	  function email(name, mobile) {
-	    alert("You can mail " + name + " ..\n\n" + mobile);
+	  function email(name, mailid) {
+	    alert("You can E-Mail " + name + " on ..\n\n" + mailid);
 	  }
 	  
 	  function call(name, mobile) {
-	    alert("You can reach " + name + " on this phone/mobile number..\n\n" + mobile);
+	    alert("You can talk to " + name + " on ..\n\n" + mobile);
 	  }
 	  
 	  String.prototype.toProperCase = function () {
