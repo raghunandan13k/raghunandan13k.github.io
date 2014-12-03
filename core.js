@@ -108,7 +108,11 @@
 		    var name = data.getFormattedValue(row,0).toProperCase();
 			
 			if(name.length > 15)
-			name = name.replace(' ', '<BR>') + '(' + data.getValue(row,6) + ')';
+			name = name.replace(' ', '<BR>');
+			
+			if((data.getValue(row,6) + '') == 'F') {
+			   name = name + '<BR>(' + data.getValue(row,6) + ')';
+			}
 			
 			//console.log(data.getFormattedValue(row,0));
 			//var tempValue = "<a href='TARGET'><img src='profiles/PERSON.PNG'></a><BR><div title='TITLE'>" + name + "</div>";
