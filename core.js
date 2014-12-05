@@ -115,7 +115,6 @@
 		
         var chart = new google.visualization.OrgChart(document.getElementById('chart_div'));
         
-		
 		for (var row = 0; row < data.getNumberOfRows(); row++) 
 		{
 		    var name = data.getFormattedValue(row,0).toProperCase();
@@ -127,9 +126,6 @@
 			   name = name + '<BR>(' + data.getValue(row,6) + ')';
 			}
 			
-			//console.log(data.getFormattedValue(row,0));
-			//var tempValue = "<a href='TARGET'><img src='profiles/PERSON.PNG'></a><BR><div title='TITLE'>" + name + "</div>";
-
 			var tempValue = "<a href='#'><img src='PERSON.PNG'></a><BR><div title='TITLE'>" + name + "</div>";
 			// Get Profile Image for Node
 			tempValue = tempValue.replace('PERSON.PNG', getProfileImage(data.getValue(row,0)));
@@ -151,7 +147,7 @@
 			// 2. MOBILE
 			if( (data.getValue(row,3) + '') != '')
 			{
-			  tempValue = tempValue + "<a href='#' onClick='call2(\"" + name.replace('<BR>', ' ') + "\"," + (data.getValue(row,3) + '') + ")'><img id='img' src='https://cloud.githubusercontent.com/assets/10024457/5278258/6d3e7d00-7afd-11e4-9785-389d90f4702e.png'></a>";
+			  tempValue = tempValue + "<a href='#' onClick='call2(\"" + name.replace('<BR>', ' ') + "\"," + (data.getValue(row,3) + '') + ")'><img id='img' src='https://cloud.githubusercontent.com/assets/10024457/5278258/6d3e7d00-7afd-11e4-9785-389d90f4702e.png' title='Contact Number'></a>";
 			}
 			
 			// 2. WhatsApp!
@@ -163,7 +159,7 @@
 			// 3. Email
 			if( (data.getValue(row,5) + '') != '')
 			{
-			  tempValue = tempValue + "<a href='#' onClick='mail2(\"" + name.replace('<BR>', ' ') + "\", \"" + (data.getValue(row,5) + '') + "\")'><img id='img' src='https://cloud.githubusercontent.com/assets/10024457/5278256/6cd296ee-7afd-11e4-8a8a-f99c5f67ebe9.png'></a>";
+			  tempValue = tempValue + "<a href='#' onClick='mail2(\"" + name.replace('<BR>', ' ') + "\", \"" + (data.getValue(row,5) + '') + "\")'><img id='img' src='https://cloud.githubusercontent.com/assets/10024457/5278256/6cd296ee-7afd-11e4-8a8a-f99c5f67ebe9.png' title='Email Address'></a>";
 			}
 			
 			data.setFormattedValue(row,0,  tempValue);
@@ -190,5 +186,5 @@
 	}
 	
 	function logit(msg) {
-		try { console.log( 'logit '+msg ); } catch ( e ) { };
+		try { console.log( 'logit '+ msg ); } catch ( e ) { };
 	}
