@@ -133,7 +133,7 @@
 			var tempValue = "<a href='TARGET'><img src='PERSON.PNG'></a><BR><div title='TITLE'>" + name + "</div>";
 			tempValue = tempValue.replace('PERSON.PNG', getProfileImage(data.getValue(row,0)));
 			tempValue = tempValue.replace('TITLE', data.getValue(row,0));
-			tempValue = tempValue.replace('TARGET', data.getValue(row,0) + '.HTML');
+			//tempValue = tempValue.replace('TARGET', data.getValue(row,0) + '.HTML');
 			
 			// 1. ALIVE OR DEAD			
 			if( (data.getValue(row,2) + '') == 'DEAD')
