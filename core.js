@@ -130,15 +130,17 @@
 			//console.log(data.getFormattedValue(row,0));
 			//var tempValue = "<a href='TARGET'><img src='profiles/PERSON.PNG'></a><BR><div title='TITLE'>" + name + "</div>";
 
-			var tempValue = "<a href='TARGET'><img src='PERSON.PNG'></a><BR><div title='TITLE'>" + name + "</div>";
+			var tempValue = "<a href='#'><img src='PERSON.PNG'></a><BR><div title='TITLE'>" + name + "</div>";
+			// Get Profile Image for Node
 			tempValue = tempValue.replace('PERSON.PNG', getProfileImage(data.getValue(row,0)));
+			// ToolTip Text
 			tempValue = tempValue.replace('TITLE', data.getValue(row,0));
-			//tempValue = tempValue.replace('TARGET', data.getValue(row,0) + '.HTML');
+			// Link to Induvidual Pages
+			//tempValue = tempValue.replace('#', data.getValue(row,0) + '.HTML');
 			
 			// 1. ALIVE OR DEAD			
 			if( (data.getValue(row,2) + '') == 'DEAD')
 			{
-			  //console.log(data.getValue(row,2));
 			  data.setRowProperty(row, 'style', 'background: #D8D8D8;border-color: #D8D8D8');
 			}
 			else
@@ -167,7 +169,6 @@
 			data.setFormattedValue(row,0,  tempValue);
 			//console.log(data.getFormattedValue(row,0));
 		}
-		
 		chart.draw(data, {allowHtml:true, allowCollapse: true, is3D: true});
 		logEnd('CHART');
       }
