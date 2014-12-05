@@ -147,19 +147,19 @@
 			// 2. MOBILE
 			if( (data.getValue(row,3) + '') != '')
 			{
-			  tempValue = tempValue + "<a href='#' onClick='call2(\"" + name.replace('<BR>', ' ') + "\"," + (data.getValue(row,3) + '') + ")'><img id='img' src='https://cloud.githubusercontent.com/assets/10024457/5278258/6d3e7d00-7afd-11e4-9785-389d90f4702e.png' title='Contact Number'></a>";
+			  tempValue = tempValue + "<a href='#' onClick='call2(\"" + name.replace('<BR>', ' ') + "\"," + (data.getValue(row,3) + '') + ")'><img id='img' src='https://cloud.githubusercontent.com/assets/10024457/5312482/95a2981a-7c80-11e4-88b1-3cd3aa092a88.png' title='Contact Number'></a>";
 			}
 			
 			// 2. WhatsApp!
 			if( (data.getValue(row,4) + '') != '')
 			{
-			  tempValue = tempValue + "<a href='#' onClick='whatsapp2(\"" + name.replace('<BR>', ' ') + "\"," + (data.getValue(row,3) + '') + ")'><img id='img' src='https://cloud.githubusercontent.com/assets/10024457/5278257/6d067090-7afd-11e4-9f50-3b7f4324cc1c.PNG'></a>";
+			  tempValue = tempValue + "<a href='#' onClick='whatsapp2(\"" + name.replace('<BR>', ' ') + "\"," + (data.getValue(row,3) + '') + ")'><img id='img' src='https://cloud.githubusercontent.com/assets/10024457/5312481/95a012a2-7c80-11e4-9357-5ce19d6b2572.png'></a>";
 			}
 			
 			// 3. Email
 			if( (data.getValue(row,5) + '') != '')
 			{
-			  tempValue = tempValue + "<a href='#' onClick='mail2(\"" + name.replace('<BR>', ' ') + "\", \"" + (data.getValue(row,5) + '') + "\")'><img id='img' src='https://cloud.githubusercontent.com/assets/10024457/5278256/6cd296ee-7afd-11e4-8a8a-f99c5f67ebe9.png' title='Email Address'></a>";
+			  tempValue = tempValue + "<a href='#' onClick='mail2(\"" + name.replace('<BR>', ' ') + "\", \"" + (data.getValue(row,5) + '') + "\")'><img id='img' src='https://cloud.githubusercontent.com/assets/10024457/5312480/959e5ec6-7c80-11e4-81a1-bfbff8309651.png' title='Email Address'></a>";
 			}
 			
 			data.setFormattedValue(row,0,  tempValue);
