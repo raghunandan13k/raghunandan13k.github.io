@@ -1,5 +1,5 @@
   function getImgData(chartContainer) {
-    var chartArea = chartContainer.getElementsByTagName('svg')[0].parentNode;
+    var chartArea = chartContainer.getElementsByTagName('iframe')[0].contentDocument.getElementById('chartArea');
     var svg = chartArea.innerHTML;
     var doc = chartContainer.ownerDocument;
     var canvas = doc.createElement('canvas');
