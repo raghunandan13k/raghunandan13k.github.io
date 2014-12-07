@@ -166,6 +166,8 @@
 			//console.log(data.getFormattedValue(row,0));
 		}
 		chart.draw(data, {allowHtml:true, allowCollapse: true, is3D: true});
+		
+		document.getElementById('png').outerHTML = '<a href="' + chart.getImageURI() + '">Printable version</a>';
 		logEnd('CHART');
       }
 	  
