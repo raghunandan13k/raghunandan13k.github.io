@@ -165,9 +165,15 @@
 			data.setFormattedValue(row,0,  tempValue);
 			//console.log(data.getFormattedValue(row,0));
 		}
+		
+		
+		google.visualization.events.addListener(chart, 'ready', function () {
+        		chart_div.innerHTML = '<img src="' + chart.getImageURI() + '">';
+		        console.log(chart_div.innerHTML);
+		      });
+		
 		chart.draw(data, {allowHtml:true, allowCollapse: true, is3D: true});
 		
-		document.getElementById('png').outerHTML = '<a href="' + chart.getImageURI() + '">Printable version</a>';
 		logEnd('CHART');
       }
 	  
