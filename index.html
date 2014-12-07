@@ -54,6 +54,7 @@
 	}
 	</style>
 	<script type='text/javascript' src='core.js'></script>
+	<script type='text/javascript' src='utility.js'></script>
 	<script type='text/javascript' src='profile.js'></script>
     	<script type='text/javascript' src='https://www.google.com/jsapi'></script>
 	<script type="text/javascript" src="http://code.jquery.com/jquery-1.9.1.min.js"></script>
@@ -63,11 +64,8 @@
 	</script>
   </head>
   <body bgcolor='#FFEBCC'>
-    <div id='chart_div'></div>
-    <BR>
-    <div>
-	<p align="left" class="footter">1 Double Click on any Name to Expand/Collapse the Branch</p>
-	<p align="left" class="footter">2 Hover over images to Zoom them</p>
-    </div>
+    	<div id='chart_div'></div>
+    	<BR>
+	<button onclick="saveAsImg(document.getElementById('chart_div'));">Save as PNG Image</button>
   <body>
 </html>
