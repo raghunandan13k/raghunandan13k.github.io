@@ -164,18 +164,18 @@
 			}
 			
 			data.setFormattedValue(row,0,  tempValue);
-			//console.log(data.getFormattedValue(row,0));
-			
-			var selectedType = $("#STYPE option:selected").text();
-			if( selectedType == 'Female' && (data.getValue(row,6) + '') != 'F')
-			{
-				view.setRows(view.getFilteredRows([{column: 6, value: 'F'}]));
-			}
-			if( selectedType == 'Male' && (data.getValue(row,6) + '') != 'M')
-			{
-				view.setRows(view.getFilteredRows([{column: 6, value: 'M'}]));
-			}
 		}
+		
+		var selectedType = $("#STYPE option:selected").text();
+		if( selectedType == 'Female')
+		{
+			view.setRows(view.getFilteredRows([{column: 6, value: 'F'}]));
+		}
+		if( selectedType == 'Male')
+		{
+			view.setRows(view.getFilteredRows([{column: 6, value: 'M'}]));
+		}
+		
 		chart.draw(view, {allowHtml:true, allowCollapse: true, is3D: true});
 		logEnd('CHART');
       }
