@@ -168,11 +168,11 @@
 			var selectedType = $("#STYPE option:selected").text();
 			if( selectedType == 'Female' && (data.getValue(row,6) + '') != 'F')
 			{
-				data.collapse(row, true);
+				data.removeRow(row);
 			}
 			if( selectedType == 'Male' && (data.getValue(row,6) + '') != 'M')
 			{
-				data.collapse(row, true);
+				data.removeRow(row);
 			}
 		}
 		
