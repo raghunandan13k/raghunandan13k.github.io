@@ -177,6 +177,7 @@
 		}
 		
 		var view = new google.visualization.DataView(data);
+		view.setRows(view.getFilteredRows([{column: 6, value: 'M'}]));
 		chart.draw(view, {allowHtml:true, allowCollapse: true, is3D: true});
 		
 		logEnd('CHART');
