@@ -176,7 +176,8 @@
 			}
 		}
 		
-		chart.draw(data, {allowHtml:true, allowCollapse: true, is3D: true});
+		var view = new google.visualization.DataView(data);
+		chart.draw(view, {allowHtml:true, allowCollapse: true, is3D: true});
 		
 		logEnd('CHART');
       }
