@@ -127,6 +127,8 @@
 			   name = name + '<BR>(' + data.getValue(row,6) + ')';
 			}
 			
+			name = name + '<BR>[' + row+ ']';
+			
 			var tempValue = "<a href='#'><img src='PERSON.PNG'></a><BR><div title='TITLE'>" + name + "</div>";
 			// Get Profile Image for Node
 			tempValue = tempValue.replace('PERSON.PNG', getProfileImage(data.getValue(row,0)));
