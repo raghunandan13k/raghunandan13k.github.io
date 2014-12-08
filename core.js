@@ -114,7 +114,8 @@
         ]);
 		
         var chart = new google.visualization.OrgChart(document.getElementById('chart_div'));
-        
+        var view  = new google.visualization.DataView(data);
+        	
 		for (var row = 0; row < data.getNumberOfRows(); row++) 
 		{
 		    var name = data.getFormattedValue(row,0).toProperCase();
@@ -168,18 +169,14 @@
 			var selectedType = $("#STYPE option:selected").text();
 			if( selectedType == 'Female' && (data.getValue(row,6) + '') != 'F')
 			{
-				data.removeRow(row);
+				view.setRows(view.getFilteredRows([{column: 6, value: 'F'}]));
 			}
 			if( selectedType == 'Male' && (data.getValue(row,6) + '') != 'M')
 			{
-				data.removeRow(row);
+				view.setRows(view.getFilteredRows([{column: 6, value: 'M'}]));
 			}
 		}
-		
-		var view = new google.visualization.DataView(data);
-		view.setRows(view.getFilteredRows([{column: 6, value: 'M'}]));
 		chart.draw(view, {allowHtml:true, allowCollapse: true, is3D: true});
-		
 		logEnd('CHART');
       }
 	  
