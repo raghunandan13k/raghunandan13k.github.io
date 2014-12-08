@@ -127,13 +127,14 @@
 			   name = name + '<BR>(' + data.getValue(row,6) + ')';
 			}
 			
-			name = name + '<BR>[' + row+ ']';
-			
 			var tempValue = "<a href='#'><img src='PERSON.PNG'></a><BR><div title='TITLE'>" + name + "</div>";
+		
 			// Get Profile Image for Node
 			tempValue = tempValue.replace('PERSON.PNG', getProfileImage(data.getValue(row,0)));
+		
 			// ToolTip Text
 			tempValue = tempValue.replace('TITLE', data.getValue(row,0));
+			
 			// Link to Induvidual Pages
 			//tempValue = tempValue.replace('#', data.getValue(row,0) + '.HTML');
 			
@@ -180,22 +181,15 @@
 		
 		chart.draw(view, {allowHtml:true, allowCollapse: true, is3D: true});
 		logEnd('CHART');
+      	
       }
 	  
 	function logStart(text) {
-		try{
-			logit("STARTED");
-			console.time(text);
-		} catch(e) {
-		}
+		try{logit("STARTED");console.time(text);} catch(e) {}
 	}
-
+	
 	function logEnd(text) {
-		try{
-			logit("COMPLETED");
-			console.timeEnd(text);
-		} catch(e) {
-		}
+		try{logit("COMPLETED");console.timeEnd(text);} catch(e) {}
 	}
 	
 	function logit(msg) {
