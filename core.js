@@ -23,7 +23,8 @@
       		try{
 			var URLPARAM = window.location.hash.split('#')[1].toUpperCase();
 			$("#SOURCE").val(URLPARAM);
-		} catch(e) {}
+			$("#SOURCE").hide();
+		} catch(e) {$("#SOURCE").show();}
 
 		logStart('CHART');
 		var data = new google.visualization.DataTable();
