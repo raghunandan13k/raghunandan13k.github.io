@@ -132,6 +132,8 @@
         
         if(sourceTree == 'KOLKUNTE') {
         
+        logit(sourceTree.toLowerCase() + '.json');
+        
         $.getJSON( sourceTree.toLowerCase() + '.json', function( json ) {
   		console.log( "JSON : " + json );
   		data.addRows(json);
