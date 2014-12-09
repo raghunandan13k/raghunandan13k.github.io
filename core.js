@@ -93,8 +93,8 @@
 		// 6
 		  [{v:'2006', f:'KRISHNAMURTHY'}, '1001', 'ALIVE', '', '', '', 'M' , '' ],
 			[{v:'20061', f:'RAGHUNANDAN KRISHNAMURTHY'}, '2006', 'ALIVE', '9900166130', 'YES', 'raghunandan13k@gmail.com', 'M' , '28th June' ],
-				[{v:'200611', f:'SAMARTH RAGHUNANDAN'}, '20061', 'ALIVE', '', '', '', 'M' , '' ],
-			[{v:'20062', f:'VEDANARAYANA KRISHNAMURTHY'}, '2006', 'ALIVE', '', '', '', 'M' , '' ],
+				[{v:'200611', f:'SAMARTH RAGHUNANDAN'}, '20061', 'ALIVE', '', '', '', 'M' , '8th September' ],
+			[{v:'20062', f:'VEDANARAYANA KRISHNAMURTHY'}, '2006', 'ALIVE', '9845413446', 'YES', 'vedanarayana_k@gmail.com', 'M' , '23rd December' ],
           
 		// 7
 		  [{v:'2007', f:'SURESH'}, '1001', 'ALIVE', '', '', '', 'M' , '' ],
