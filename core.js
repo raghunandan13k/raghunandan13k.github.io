@@ -39,7 +39,7 @@
 		// 7
 		data.addColumn('string', 'BIRTHDAY');
 	
-	var sourceTree = $("#SOURCE option:selected").text();
+	var sourceTree = $("#SOURCE option:selected").val();
 	
 	if(sourceTree == 'KOLIWADA') {
         data.addRows([
@@ -212,7 +212,7 @@
 			data.setFormattedValue(row,0,  tempValue);
 		}
 		
-		var selectedType = $("#STYPE option:selected").text();
+		var selectedType = $("#STYPE option:selected").val();
 		if(selectedType == 'MALE')
 		{
 			view.setRows(view.getFilteredRows([{column: 6, value: 'M'}]));
