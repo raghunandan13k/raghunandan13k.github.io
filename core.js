@@ -175,7 +175,7 @@
 			// 4. BirthDay
 			if( (data.getValue(row,7) + '') != '')
 			{
-			  tempValue = tempValue + "<a href='#' onClick='bday2(\"" + name.replace('<BR>', ' ') + "\", \"" + (data.getValue(row,5) + '') + "\")'><img id='img' src='https://cloud.githubusercontent.com/assets/10024457/5353985/b6530a16-7fa7-11e4-966b-7c5be639b17b.png' title='BirthDay!'></a>";
+			  tempValue = tempValue + "<a href='#' onClick='bday2(\"" + name.replace('<BR>', ' ') + "\", \"" + (data.getValue(row,7) + '') + "\")'><img id='img' src='https://cloud.githubusercontent.com/assets/10024457/5353985/b6530a16-7fa7-11e4-966b-7c5be639b17b.png' title='BirthDay!'></a>";
 			}
 			
 			data.setFormattedValue(row,0,  tempValue);
