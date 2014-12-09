@@ -131,6 +131,11 @@
         }
         
         if(sourceTree == 'KOLKUNTE') {
+        
+        $.getJSON( sourceTree.toLowerCase() + '.json', function( json ) {
+  		console.log( "JSON : " + json );
+ 	});
+ 
         data.addRows([
 		[{v:'1', f:'KOLKUNTE'}, '1', 'DEAD', '', '', '', 'M' , '' ],
 		  [{v:'1001', f:'KHADHI SHANKARAPPA'}, '1', 'DEAD', '', '', '', 'M' , '' ],          			
