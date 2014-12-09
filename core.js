@@ -19,6 +19,12 @@
 	  };
 	  
       function drawChart() {
+      	
+      		try{
+			var URLPARAM = window.location.hash.split('#')[1].toUpperCase();
+			$("#SOURCE").val(URLPARAM);
+		} catch(e) {}
+
 		logStart('CHART');
 		var data = new google.visualization.DataTable();
 
