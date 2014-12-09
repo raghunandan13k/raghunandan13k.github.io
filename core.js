@@ -10,6 +10,10 @@
 	    alert("You can talk to " + name + " on ..\n\n" + mobile);
 	  }
 	  
+	  function bday2(name, bday) {
+	    alert(name + " is Celebrating Birthday on..\n\n" + bday);
+	  }
+	  
 	  String.prototype.toProperCase = function () {
 		return this.replace(/\w\S*/g, function(txt){return txt.charAt(0).toUpperCase() + txt.substr(1).toLowerCase();});
 	  };
@@ -88,7 +92,7 @@
 		  
 		// 6
 		  [{v:'2006', f:'KRISHNAMURTHY'}, '1001', 'ALIVE', '', '', '', 'M' , '' ],
-			[{v:'20061', f:'RAGHUNANDAN KRISHNAMURTHY'}, '2006', 'ALIVE', '9900166130', 'YES', 'raghunandan13k@gmail.com', 'M' , '' ],
+			[{v:'20061', f:'RAGHUNANDAN KRISHNAMURTHY'}, '2006', 'ALIVE', '9900166130', 'YES', 'raghunandan13k@gmail.com', 'M' , '28th June' ],
 				[{v:'200611', f:'SAMARTH RAGHUNANDAN'}, '20061', 'ALIVE', '', '', '', 'M' , '' ],
 			[{v:'20062', f:'VEDANARAYANA KRISHNAMURTHY'}, '2006', 'ALIVE', '', '', '', 'M' , '' ],
           
