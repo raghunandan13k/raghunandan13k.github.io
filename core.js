@@ -167,7 +167,7 @@
 			var tempValue = "<a href='#'><img src='PERSON.PNG'></a><BR><div title='TITLE'>" + name + "</div>";
 		
 			// Get Profile Image for Node
-			tempValue = tempValue.replace('PERSON.PNG', getProfileImage(data.getValue(row,0)));
+			tempValue = tempValue.replace('PERSON.PNG', getProfileImage(data.getValue(row,0), sourceTree));
 		
 			// ToolTip Text
 			tempValue = tempValue.replace('TITLE', data.getValue(row,0));
