@@ -132,14 +132,12 @@
         
         if(sourceTree == 'KOLKUNTE') {
         
-        logit(sourceTree.toLowerCase() + '.json');
-        
         $.getJSON( sourceTree.toLowerCase() + '.json', function( json ) {
   		console.log( "JSON : " + json );
   		data.addRows(json);
  	});
  
-        /*data.addRows([
+        data.addRows([
 		[{v:'1', f:'KOLKUNTE'}, '1', 'DEAD', '', '', '', 'M' , '' ],
 		  [{v:'1001', f:'KHADHI SHANKARAPPA'}, '1', 'DEAD', '', '', '', 'M' , '' ],          			
         	
@@ -163,7 +161,7 @@
 				[{v:'20061', f:'RAKSHITHA SHANKARANARAYANA'}, '2006', 'ALIVE', '', '', '', 'F' , '7th January' ],
 			[{v:'2007', f:'JAYASHREE RAVINDRA'}, '1001', 'ALIVE', '', '', '', 'F' , '' ],
 				[{v:'20071', f:'MADHUKARA RAVINDRA'}, '2007', 'ALIVE', '', '', '', 'F' , '29th October' ],				
-        ]);*/
+        ]);
         }
 		
         var chart = new google.visualization.OrgChart(document.getElementById('chart_div'));
