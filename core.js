@@ -38,7 +38,10 @@
 		data.addColumn('string', 'STYPE');
 		// 7
 		data.addColumn('string', 'BIRTHDAY');
-		
+	
+	var sourceTree = $("#SOURCE option:selected").text();
+	
+	if(sourceTree == 'KOLIWADA') {
         data.addRows([
 		[{v:'1', f:'KOLIWADA'}, '1', 'DEAD', '', '', '', 'M' , '' ],
 		  [{v:'1001', f:'VEDANARAYANA BHAT'}, '1', 'DEAD', '', '', '', 'M' , '' ],          			
@@ -118,6 +121,34 @@
 					[{v:'1002111', f:'SHREYAS BHAT'}, '100211', 'ALIVE', '', '', '', 'M' , '' ],
 				[{v:'100212', f:'DEEPASHREE BHAT'}, '10021', 'ALIVE', '', '', '', 'F' , '' ],
         ]);
+        }
+        
+        if(sourceTree == 'KOLKUNTE') {
+        data.addRows([
+		[{v:'1', f:'KOLKUNTE'}, '1', 'DEAD', '', '', '', 'M' , '' ],
+		  [{v:'1001', f:'KHADHI SHANKARAPPA'}, '1', 'DEAD', '', '', '', 'M' , '' ],          			
+        	
+			[{v:'2001', f:'RAMDAS K S'}, '1001', 'DEAD', '', '', '', 'M' , '' ],
+			[{v:'2002', f:'NAGARAJ K S'}, '1001', 'ALIVE', '', '', '', 'M' , '' ],
+				[{v:'20021', f:'SHREE HARSHA S N'}, '2002', 'ALIVE', '', '', '', 'M' , '' ],
+				[{v:'20022', f:'DEEPAK'}, '2002', 'ALIVE', '', '', '', 'M' , '' ],
+					[{v:'200211', f:'ADHITI'}, '20022', 'ALIVE', '', '', '', 'F' , '' ],
+			[{v:'2003', f:'PRABHAKAR K S'}, '1001', 'ALIVE', '', '', '', 'M' , '' ],
+				[{v:'20031', f:'DIVYA KIRAN'}, '2003', 'ALIVE', '', '', '', 'F' , '' ],
+				[{v:'20032', f:'KAVYA K P'}, '2003', 'ALIVE', '', '', '', 'F' , '' ],
+			[{v:'2004', f:'GOPINATH K S'}, '1001', 'ALIVE', '', '', '', 'M' , '' ],
+				[{v:'20041', f:'ANVITHA G'}, '2004', 'ALIVE', '', '', '', 'F' , '' ],
+		  
+		  	[{v:'2005', f:'BHARATHI KRISHNAMURTHY'}, '1001', 'ALIVE', '', '', '', 'F' , '' ],
+				[{v:'20051', f:'RAGHUNANDAN KRISHNAMURTHY'}, '2005', 'ALIVE', '9900166130', 'YES', 'raghunandan13k@gmail.com', 'F' , '28th June' ],
+					[{v:'200511', f:'SAMARTH RAGHUNANDAN'}, '20051', 'ALIVE', '', '', '', 'F' , '8th September' ],
+				[{v:'20052', f:'VEDANARAYANA KRISHNAMURTHY'}, '2005', 'ALIVE', '9845413446', 'YES', 'vedanarayana_k@gmail.com', 'F' , '23rd December' ],
+			[{v:'2006', f:'GEETHA SHANKARANARAYANA'}, '1001', 'ALIVE', '', '', '', 'F' , '' ],
+				[{v:'20061', f:'RAKSHITHA SHANKARANARAYANA'}, '2006', 'ALIVE', '', '', '', 'F' , '' ],
+			[{v:'2007', f:'JAYSHREE RAVINDRA'}, '1001', 'ALIVE', '', '', '', 'F' , '' ],
+				[{v:'20071', f:'MADHUKARA RAVINDRA'}, '2007', 'ALIVE', '', '', '', 'F' , '' ],				
+        ]);
+        }
 		
         var chart = new google.visualization.OrgChart(document.getElementById('chart_div'));
         var view  = new google.visualization.DataView(data);
@@ -182,18 +213,13 @@
 		}
 		
 		var selectedType = $("#STYPE option:selected").text();
-		if( selectedType == 'Female')
-		{
-			view.setRows(view.getFilteredRows([{column: 6, value: 'F'}]));
-		}
-		if( selectedType == 'Male')
+		if(selectedType == 'MALE')
 		{
 			view.setRows(view.getFilteredRows([{column: 6, value: 'M'}]));
 		}
 		
 		chart.draw(view, {allowHtml:true, allowCollapse: true, is3D: true});
 		logEnd('CHART');
-      	
       }
 	  
 	function logStart(text) {
