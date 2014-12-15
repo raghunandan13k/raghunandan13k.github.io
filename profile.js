@@ -24,7 +24,7 @@ function getProfileImage(lookupId, sourceTree) {
   
   var arsikere = 
   {
-    1       : 'https://cloud.githubusercontent.com/assets/10024457/5355115/e7b87dda-7fb5-11e4-9d3a-28e137858d03.jpg',
+    1       : 'https://cloud.githubusercontent.com/assets/10024457/5434342/fa9a5d4a-8476-11e4-9c90-416248451831.jpg',
   };
   
   if(sourceTree == 'KOLIWADA' && (typeof koliwada[lookupId] != "undefined") ) 
