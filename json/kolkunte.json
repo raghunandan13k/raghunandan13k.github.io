@@ -1,4 +1,4 @@
-[
+jsonData = 	[
 		[{v:'1', f:'KOLKUNTE'}, '1', 'DEAD', '', '', '', 'M' , '' ],
 		  [{v:'1001', f:'KHADHI SHANKARAPPA'}, '1', 'DEAD', '', '', '', 'M' , '' ],          			
         	
@@ -21,4 +21,4 @@
 				[{v:'20061', f:'RAKSHITHA SHANKARANARAYANA'}, '2006', 'ALIVE', '', '', '', 'F' , '' ],
 			[{v:'2007', f:'JAYSHREE RAVINDRA'}, '1001', 'ALIVE', '', '', '', 'F' , '' ],
 				[{v:'20071', f:'MADHUKARA RAVINDRA'}, '2007', 'ALIVE', '', '', '', 'F' , '' ],				
-			]
+		]
