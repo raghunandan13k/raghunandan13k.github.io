@@ -49,7 +49,9 @@
 	var sourceTree = $("#SOURCE option:selected").val();
 	
 	if(sourceTree == 'KOLIWADA') {
-        data.addRows([
+        data.addRows(koliwadaData
+        /*
+        [
 		[{v:'1', f:'KOLIWADA'}, '1', 'DEAD', '', '', '', 'M' , '' ],
 		  [{v:'1001', f:'VEDANARAYANA BHAT'}, '1', 'DEAD', '', '', '', 'M' , '' ],          			
         	
@@ -127,7 +129,7 @@
 				[{v:'100211', f:'DILIP BHAT'}, '10021', 'ALIVE', '', '', '', 'M' , '' ],
 					[{v:'1002111', f:'SHREYAS BHAT'}, '100211', 'ALIVE', '', '', '', 'M' , '' ],
 				[{v:'100212', f:'DEEPASHREE BHAT'}, '10021', 'ALIVE', '', '', '', 'F' , '' ],
-        ]);
+        ]*/);
         }
         
         if(sourceTree == 'KOLKUNTE') {
