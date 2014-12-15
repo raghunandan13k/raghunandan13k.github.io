@@ -21,9 +21,9 @@
       function drawChart() {
       	
       		try{
-			var URLPARAM = window.location.hash.split('#')[1].toUpperCase();
-			$("#SOURCE").val(URLPARAM);
-			$("#SOURCE").hide();
+		  var URLPARAM = window.location.hash.split('#')[1].toUpperCase();
+		  $("#SOURCE").val(URLPARAM);
+		  $("#SOURCE").hide();
 		} catch(e) {$("#SOURCE").show();}
 
 		logStart('CHART');
@@ -51,8 +51,14 @@
 	if(sourceTree == 'KOLIWADA') {
           data.addRows(koliwadaData);
         }
-        if(sourceTree == 'KOLKUNTE') {
+        else if(sourceTree == 'KOLKUNTE') {
           data.addRows(kolkunteData);
+        }
+        else if(sourceTree == 'BELLARY') {
+          data.addRows(bellaryData);
+        }
+        else if(sourceTree == 'ARSIKERE') {
+          data.addRows(arsikereData);
         }
 		
         var chart = new google.visualization.OrgChart(document.getElementById('chart_div'));
@@ -120,12 +126,12 @@
 		var selectedType = $("#STYPE option:selected").val();
 		if(selectedType == 'MALE')
 		{
-			view.setRows(view.getFilteredRows([{column: 6, value: 'M'}]));
+		  view.setRows(view.getFilteredRows([{column: 6, value: 'M'}]));
 		}
 		
 		chart.draw(view, {allowHtml:true, allowCollapse: true, is3D: true});
 		logEnd('CHART');
-      }
+        }
 	  
 	function logStart(text) {
 		try{logit("STARTED");console.time(text);} catch(e) {}
