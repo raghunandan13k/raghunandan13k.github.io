@@ -17,14 +17,31 @@ function getProfileImage(lookupId, sourceTree) {
     200511  : 'https://cloud.githubusercontent.com/assets/10024457/5279032/301c0eca-7b06-11e4-8366-c3ebda454ca2.png',
   };
   
+  var bellary = 
+  {
+    
+  };
+  
+  var arsikere = 
+  {
+    
+  };
+  
   if(sourceTree == 'KOLIWADA' && (typeof koliwada[lookupId] != "undefined") ) 
   {
     return koliwada[lookupId];
   }
-  
-  if(sourceTree == 'KOLKUNTE' && (typeof kolkunte[lookupId] != "undefined") ) 
+  else if(sourceTree == 'KOLKUNTE' && (typeof kolkunte[lookupId] != "undefined") ) 
   {
     return kolkunte[lookupId];
+  }
+  else if(sourceTree == 'BELLARY' && (typeof kolkunte[lookupId] != "undefined") ) 
+  {
+    return bellary[lookupId];
+  }
+  else if(sourceTree == 'ARSIKERE' && (typeof kolkunte[lookupId] != "undefined") ) 
+  {
+    return arsikere[lookupId];
   }
   
   // return default image
