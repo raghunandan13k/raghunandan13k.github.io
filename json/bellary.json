@@ -1,13 +1,13 @@
 bellaryData = 	
 [
 		[{v:'1', f:'KOLKUNTE'}, '1', 'DEAD', '', '', '', 'M' , '' ],
-		  [{v:'1001', f:'GURURAO DESAI'}, '1', 'ALIVE', '', '', '', 'M' , '' ],          			
-         		[{v:'1001', f:'RAMA DEVI DESAI (JAGANNATHA)'}, '1001', 'ALIVE', '', '', '', 'F' , '' ], 
-					[{v:'10011', f:'BHAVANA JAGANNATHA (RAGHUNANDAN)'}, '1001', 'ALIVE', '', '', '', 'F' , '' ], 
-						[{v:'100111', f:'SAMARTH RAGHUNANDAN'}, '10011', 'ALIVE', '', '', '', 'F' , '' ], 
-				[{v:'1002', f:'SRINIVASA DESAI'}, '1001', 'ALIVE', '', '', '', 'M' , '' ],  
-					[{v:'10011', f:'ABHIJIT DESAI'}, '1001', 'ALIVE', '', '', '', 'F' , '' ],
-					[{v:'10011', f:'SANJEEV DESAI'}, '1001', 'ALIVE', '', '', '', 'F' , '' ],
-				[{v:'1003', f:'UMA DEVI DESAI(RAGHAVENDRA KATTI)'}, '1001', 'ALIVE', '', '', '', 'F' , '' ], 
-					[{v:'1003', f:'AKASH R KATTI'}, '1001', 'ALIVE', '', '', '', 'F' , '' ],
+		  [{v:'101', f:'GURURAO DESAI'}, '1', 'ALIVE', '', '', '', 'M' , '' ],          			
+         		[{v:'1011', f:'RAMA DEVI JAGANNATHA'}, '101', 'ALIVE', '', '', '', 'F' , '' ], 
+					[{v:'1012', f:'BHAVANA RAGHUNANDAN'}, '1011', 'ALIVE', '', '', '', 'F' , '' ], 
+						[{v:'1013', f:'SAMARTH RAGHUNANDAN'}, '1012', 'ALIVE', '', '', '', 'F' , '' ], 
+				[{v:'102', f:'SRINIVASA DESAI'}, '101', 'ALIVE', '', '', '', 'M' , '' ],  
+					[{v:'1021', f:'ABHIJIT DESAI'}, '102', 'ALIVE', '', '', '', 'F' , '' ],
+					[{v:'1021', f:'SANJEEV DESAI'}, '102', 'ALIVE', '', '', '', 'F' , '' ],
+				[{v:'103', f:'UMA DEVI RAGHAVENDRA KATTI'}, '101', 'ALIVE', '', '', '', 'F' , '' ], 
+					[{v:'1031', f:'AKASH R KATTI'}, '103', 'ALIVE', '', '', '', 'F' , '' ],
 ]
