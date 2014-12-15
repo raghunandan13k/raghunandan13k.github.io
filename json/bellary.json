@@ -1,1 +1,13 @@
-bellaryData = []
+bellaryData = 	
+[
+		[{v:'1', f:'KOLKUNTE'}, '1', 'DEAD', '', '', '', 'M' , '' ],
+		  [{v:'1001', f:'GURURAO DESAI'}, '1', 'ALIVE', '', '', '', 'M' , '' ],          			
+         		[{v:'1001', f:'RAMA DEVI DESAI (JAGANNATHA)'}, '1001', 'ALIVE', '', '', '', 'F' , '' ], 
+					[{v:'10011', f:'BHAVANA JAGANNATHA (RAGHUNANDAN)'}, '1001', 'ALIVE', '', '', '', 'F' , '' ], 
+						[{v:'100111', f:'SAMARTH RAGHUNANDAN'}, '10011', 'ALIVE', '', '', '', 'F' , '' ], 
+				[{v:'1002', f:'SRINIVASA DESAI'}, '1001', 'ALIVE', '', '', '', 'M' , '' ],  
+					[{v:'10011', f:'ABHIJIT DESAI'}, '1001', 'ALIVE', '', '', '', 'F' , '' ],
+					[{v:'10011', f:'SANJEEV DESAI'}, '1001', 'ALIVE', '', '', '', 'F' , '' ],
+				[{v:'1003', f:'UMA DEVI DESAI(RAGHAVENDRA KATTI)'}, '1001', 'ALIVE', '', '', '', 'F' , '' ], 
+					[{v:'1003', f:'AKASH R KATTI'}, '1001', 'ALIVE', '', '', '', 'F' , '' ],
+]
