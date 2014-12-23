@@ -5,7 +5,7 @@ koliwadaData =
         	
         	// 1
 		  [{v:'2001', f:'MADHAVA BHAT'}, '1001', 'ALIVE', '', '', '', 'M' , '' ],
-			[{v:'20011', f:'SATHISH BHAT'}, '2001', 'ALIVE', '', '', '', 'M' , '' ],
+			[{v:'20011', f:'SATHISH CHANDRA'}, '2001', 'ALIVE', '', '', '', 'M' , '' ],
 			[{v:'20012', f:'MAHESH BHAT'}, '2001', 'ALIVE', '', '', '', 'M' , '' ],
 				[{v:'200121', f:'PANNAGA BHAT'}, '20012', 'ALIVE', '', '', '', 'M' , '' ],
 				[{v:'200122', f:'SNEHA BHAT'}, '20012', 'ALIVE', '', '', '', 'F' , '' ],
